@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>テスト</title>
-  <link rel="stylesheet" href="style.css">  <!-- CSSを読み込む -->
+  <style>
+    :root{--g:rgba(255,255,255,.04);--gb:rgba(255,255,255,.10);--gh:rgba(255,255,255,.07);}
+*{margin:0;padding:0;box-sizing:border-box;cursor:default;}
+html{scroll-behavior:smooth;}
+body{background:#080808;color:#fff;font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;overflow-x:hidden;min-height:100vh;}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:60px 60px;}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(255,255,255,.03),transparent 70%);}
+  </style>
 </head>
 <body>
 
